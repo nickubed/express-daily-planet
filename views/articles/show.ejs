@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Artiklezzz</title>
+</head>
+<body>
+    <h1>Your Articles</h1>
+    <% if (articles.length) { %>
+        <% articles.forEach(a => { %>
+            <div>
+                <h2>Title: <%= a.title %></h2>
+                <h3>Content: <%= a.content %></h3>
+                <hr>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <h2>No Articles yet! You'd better start writing!</h2>
+    <% } %>
+</body>
+</html>
